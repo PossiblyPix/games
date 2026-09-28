@@ -15,87 +15,81 @@
         </nav>
         </div>
         <main class="games-page">
-            <h1 class="page-title">Games</h1>
-            <section class="game-grid" aria-label="Games">
-                <a class="game-card" href="https://possiblypix.github.io/games/deltarune" target="_blank">
-                    <span class="game-image"><img src="thumbnail/deltarune.jpg" alt=""></span>
-                    <span class="game-title">Deltarune 1-4</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/undertale" target="_blank">
-                    <span class="game-image"><img src="thumbnail/undertale.png" alt=""></span>
-                    <span class="game-title">Undertale</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/ultrakill" target="_blank">
-                    <span class="game-image"><img src="thumbnail/ultrakill.jpg" alt=""></span>
-                    <span class="game-title">Ultrakill</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/cuphead" target="_blank">
-                    <span class="game-image"><img src="thumbnail/cuphead.png" alt=""></span>
-                    <span class="game-title">Cuphead</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/hollow-knight" target="_blank">
-                    <span class="game-image"><img src="thumbnail/hollowknight.png" alt=""></span>
-                    <span class="game-title">Hollow Knight</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/balatro" target="_blank">
-                    <span class="game-image"><img src="thumbnail/balatro.jpg" alt=""></span>
-                    <span class="game-title">Balatro</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/peak" target="_blank">
-                    <span class="game-image"><img src="thumbnail/peak.jpg" alt=""></span>
-                    <span class="game-title">PEAK</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/beatblock" target="_blank">
-                    <span class="game-image"><img src="thumbnail/beatblock.webp" alt=""></span>
-                    <span class="game-title">Beatblock</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/celeste" target="_blank">
-                    <span class="game-image"><img src="thumbnail/celeste.jpg" alt=""></span>
-                    <span class="game-title">Celeste</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/terraria" target="_blank">
-                    <span class="game-image"><img src="thumbnail/terraria.png" alt=""></span>
-                    <span class="game-title">Terraria</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/poorbunny" target="_blank">
-                    <span class="game-image"><img src="thumbnail/poorbunny.png" alt=""></span>
-                    <span class="game-title">Poor Bunny</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/retrobowl" target="_blank">
-                    <span class="game-image"><img src="thumbnail/retrobowl.png" alt=""></span>
-                    <span class="game-title">Retro Bowl</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/fnaf" target="_blank">
-                    <span class="game-image"><img src="thumbnail/fnaf.png" alt=""></span>
-                    <span class="game-title">Five Nights at Freddy's</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/fnaf2" target="_blank">
-                    <span class="game-image"><img src="thumbnail/fnaf2.png" alt=""></span>
-                    <span class="game-title">Five Nights at Freddy's 2</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/fnaf3" target="_blank">
-                    <span class="game-image"><img src="thumbnail/fnaf3.png" alt=""></span>
-                    <span class="game-title">Five Nights at Freddy's 3</span>
-                </a>
-                <a class="game-card" href="https://possiblypix.github.io/games/fnaf4" target="_blank">
-                    <span class="game-image"><img src="thumbnail/fnaf4.png" alt=""></span>
-                    <span class="game-title">Five Nights at Freddy's 4</span>
-                </a>
-                <a class="game-card" href="nothing.com" target="_blank">
-                    <span class="game-image"><img src="placeholder.png" alt=""></span>
-                    <span class="game-title">Game</span>
-                </a>
-                <a class="game-card" href="nothing.com" target="_blank">
-                    <span class="game-image"><img src="placeholder.png" alt=""></span>
-                    <span class="game-title">Game</span>
-                </a>
-                <a class="game-card" href="nothing.com" target="_blank">
-                    <span class="game-image"><img src="placeholder.png" alt=""></span>
-                    <span class="game-title">Game</span>
-                </a>
-            </section>
+            <header class="library-heading">
+                <div>
+                    <p class="library-kicker">PossiblyPix / Library</p>
+                    <h1 class="page-title">Games</h1>
+                    <p class="library-description">Pick a game and jump back in.</p>
+                </div>
+                <label class="search-box">
+                    <span>Search games</span>
+                    <input id="game-search" type="search" placeholder="Try Celeste or FNAF" autocomplete="off">
+                </label>
+            </header>
+            <p class="game-count" id="game-count" aria-live="polite"></p>
+            <section class="game-grid" id="game-grid" aria-label="Games"></section>
+            <p class="empty-state" id="empty-state" hidden>No games match that search.</p>
         </main>
         <script>
+            const games = [
+                { title: "Deltarune 1-4", slug: "deltarune", image: "deltarune.jpg" },
+                { title: "Undertale", slug: "undertale", image: "undertale.png" },
+                { title: "Ultrakill", slug: "ultrakill", image: "ultrakill.jpg" },
+                { title: "Cuphead", slug: "cuphead", image: "cuphead.png" },
+                { title: "Hollow Knight", slug: "hollow-knight", image: "hollowknight.png" },
+                { title: "Balatro", slug: "balatro", image: "balatro.jpg" },
+                { title: "PEAK", slug: "peak", image: "peak.jpg" },
+                { title: "Beatblock", slug: "beatblock", image: "beatblock.webp" },
+                { title: "Celeste", slug: "celeste", image: "celeste.jpg" },
+                { title: "Terraria", slug: "terraria", image: "terraria.png" },
+                { title: "Poor Bunny", slug: "poorbunny", image: "poorbunny.png" },
+                { title: "Retro Bowl", slug: "retrobowl", image: "retrobowl.png" },
+                { title: "Five Nights at Freddy's", slug: "fnaf", image: "fnaf.png" },
+                { title: "Five Nights at Freddy's 2", slug: "fnaf2", image: "fnaf2.png" },
+                { title: "Five Nights at Freddy's 3", slug: "fnaf3", image: "fnaf3.png" },
+                { title: "Five Nights at Freddy's 4", slug: "fnaf4", image: "fnaf4.png" }
+            ];
+
+            const gameGrid = document.getElementById("game-grid");
+            const gameSearch = document.getElementById("game-search");
+            const gameCount = document.getElementById("game-count");
+            const emptyState = document.getElementById("empty-state");
+
+            function renderGames(query = "") {
+                const filteredGames = games.filter((game) =>
+                    game.title.toLowerCase().includes(query.trim().toLowerCase())
+                );
+                const gameCards = filteredGames.map((game, index) => {
+                    const card = document.createElement("a");
+                    card.className = "game-card";
+                    card.href = `https://possiblypix.github.io/games/${game.slug}`;
+                    card.target = "_blank";
+                    card.rel = "noopener noreferrer";
+                    card.style.setProperty("--card-index", index);
+
+                    const imageFrame = document.createElement("span");
+                    imageFrame.className = "game-image";
+                    const image = document.createElement("img");
+                    image.src = `thumbnail/${game.image}`;
+                    image.alt = "";
+                    image.loading = "lazy";
+                    imageFrame.append(image);
+
+                    const title = document.createElement("span");
+                    title.className = "game-title";
+                    title.textContent = game.title;
+                    card.append(imageFrame, title);
+                    return card;
+                });
+
+                gameGrid.replaceChildren(...gameCards);
+                gameCount.textContent = `${filteredGames.length} ${filteredGames.length === 1 ? "game" : "games"}`;
+                emptyState.hidden = filteredGames.length > 0;
+            }
+
+            gameSearch.addEventListener("input", () => renderGames(gameSearch.value));
+            renderGames();
+
             function cloakPage(event) {
                 event.preventDefault();
 
