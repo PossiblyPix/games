@@ -6,6 +6,27 @@
   --library-accent: #ffca72;
 }
 
+html,
+body {
+  min-height: 100%;
+  height: auto;
+}
+
+body {
+  min-height: 100vh;
+  background-size: 400% 100%;
+  animation: moveGradient 15s ease-in-out infinite alternate;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 .games-page {
   width: min(1200px, calc(100% - 48px));
   margin: 0 auto;
