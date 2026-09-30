@@ -42,7 +42,7 @@ const games = [
                     imageFrame.className = "game-image";
                     const image = document.createElement("img");
                     image.src = `thumbnail/${game.image}`;
-                    image.alt = "";
+                    image.alt = "Game Logo";
                     image.loading = "lazy";
                     imageFrame.append(image);
 
@@ -72,7 +72,7 @@ const games = [
                 const pageUrl = JSON.stringify(window.location.href);
                 cloakWindow.document.write(`<!doctype html>
                     <html>
-                        <head><title>about:blank</title></head>
+                        <head><title>PossiblyPix</title></head>
                         <body style="margin:0;overflow:hidden">
                             <iframe src=${pageUrl} style="width:100vw;height:100vh;border:0" title="Website"></iframe>
                         </body>
