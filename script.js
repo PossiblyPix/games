@@ -17,7 +17,7 @@ const games = [
                 { title: "Five Nights at Freddy's 4", slug: "fnaf4", image: "fnaf4.png" },
                 { title: "Five Nights at Freddy's: Sister Location", slug: "fnafsl", image: "fnafsl.png" },
                 { title: "Angry Birds", slug: "angrybirds", image: "angrybirds.png" },
-                { title: "Inscryption", slug: "inscryption", image: "inscryption.jpg" },
+                { title: "Inscryption", slug: "inscryption", image: "inscryption.webp" },
                 { title: "Black Knife Simulator", slug: "blackknifesim", image: "blackknifesim.webp" }
             ];
 
