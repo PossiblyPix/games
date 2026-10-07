@@ -18,7 +18,9 @@ const games = [
                 { title: "Five Nights at Freddy's: Sister Location", slug: "fnafsl", image: "fnafsl.png" },
                 { title: "Angry Birds", slug: "angrybirds", image: "angrybirds.png" },
                 { title: "Inscryption", slug: "inscryption", image: "inscryption.webp" },
-                { title: "Black Knife Simulator", slug: "blackknifesim", image: "blackknifesim.webp" }
+                { title: "Black Knife Simulator", slug: "blackknifesim", image: "blackknifesim.webp" },
+                { title: "Just Shapes & Beats", slug: "jsab", image: "jsab.png" },
+                { title: "Baldi's Basics Plus", slug: "baldisbasicsplus", image: "baldisbasicsplus.png" },
             ];
 
             const gameGrid = document.getElementById("game-grid");
