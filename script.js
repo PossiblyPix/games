@@ -21,6 +21,13 @@ const games = [
                 { title: "Black Knife Simulator", slug: "blackknifesim", image: "blackknifesim.webp" },
                 { title: "Just Shapes & Beats", slug: "jsab", image: "jsab.png" },
                 { title: "Baldi's Basics Plus", slug: "baldisbasicsplus", image: "baldisbasicsplus.png" },
+                { title: "Bloons TD 5", slug: "btd5", image: "btd5.png" },
+                { title: "Buckshot Roulette", slug: "buckshotroulette", image: "buckshotroulette.png" },
+                { title: "Cookie Clicker", slug: "cookieclicker", image: "cookieclicker.jpg" },
+                { title: "Dadish", slug: "dadish", image: "dadish.png" },
+                { title: "Deltatraveler", slug: "deltatraveler", image: "deltatraveler.png" },
+                { title: "FISH", slug: "fish", image: "fish.png" },
+                { title: "Jelly Mario", slug: "jellymario", image: "jellymario.jpg" },
             ];
 
             const gameGrid = document.getElementById("game-grid");
