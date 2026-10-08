@@ -28,6 +28,9 @@ const games = [
                 { title: "Deltatraveler", slug: "deltatraveler", image: "deltatraveler.png" },
                 { title: "FISH", slug: "fish", image: "fish.png" },
                 { title: "Jelly Mario", slug: "jellymario", image: "jellymario.jpg" },
+                { title: "FNAF: World", slug: "fnafworld", image: "fnafworld.png" },
+                { title: "Friday Night Funkin'", slug: "fnf", image: "fnf.png" },
+                { title: "Geometry Dash", slug: "geometrydash", image: "geometrydash.jpg" },
             ];
 
             const gameGrid = document.getElementById("game-grid");
