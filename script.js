@@ -68,7 +68,7 @@ const games = [
     { title: "Space Waves", slug: "spacewaves", image: "spacewaves.png", category: "action" },
     { title: "Stickman Hook", slug: "stickmanhook", image: "stickmanhook.png", category: "platformer" },
     { title: "Superhot", slug: "superhot", image: "superhot.png", category: "action" },
-    { title: "The Legend of Zelda: Ocarina of Time", slug: "ocarinaoftime", image: "ocarinaoftime.png", category: "adventure" },
+    { title: "The Legend of Zelda: Ocarina of Time", slug: "ocarinaoftime", image: "ocarinaoftime.jpg", category: "adventure" },
     { title: "Tomb of the Mask", slug: "tombofthemask", image: "tombofthemask.png", category: "platformer" },
     { title: "Trombone Champ", slug: "trombonechamp", image: "trombonechamp.webp", category: "rhythm" },
 ];
