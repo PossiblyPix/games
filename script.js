@@ -65,6 +65,12 @@ const games = [
     { title: "Slope", slug: "slope", image: "slope.png", category: "racing" },
     { title: "Smash Karts", slug: "smashkarts", image: "smashkarts.png", category: "racing" },
     { title: "Super Mario 64", slug: "supermario64", image: "supermario64.png", category: "platformer" },
+    { title: "Space Waves", slug: "spacewaves", image: "spacewaves.png", category: "action" },
+    { title: "Stickman Hook", slug: "stickmanhook", image: "stickmanhook.png", category: "platformer" },
+    { title: "Superhot", slug: "superhot", image: "superhot.png", category: "action" },
+    { title: "The Legend of Zelda: Ocarina of Time", slug: "ocarinaoftime", image: "ocarinaoftime.png", category: "adventure" },
+    { title: "Tomb of the Mask", slug: "tombofthemask", image: "tombofthemask.png", category: "platformer" },
+    { title: "Trombone Champ", slug: "trombonechamp", image: "trombonechamp.webp", category: "rhythm" },
 ];
 
 const gameGrid = document.getElementById("game-grid");
